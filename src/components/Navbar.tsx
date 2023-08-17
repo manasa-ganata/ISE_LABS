@@ -24,7 +24,7 @@ import useStyles from "./Navbarstyles";
     handleClose();
   };
     return (
-      <AppBar position="fixed" >
+      <>      <AppBar position="fixed" >
         <Toolbar className={classes.appBar}>
        
           <div className={classes.title} >
@@ -55,7 +55,8 @@ import useStyles from "./Navbarstyles";
         </div>
         </Toolbar>
       </AppBar>
-     
+      </>
+
     );
   };
   
