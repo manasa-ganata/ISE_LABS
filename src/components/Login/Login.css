@@ -7,4 +7,5 @@ body{
 }
 input:focus::placeholder {
     color: rgb(86, 138, 243);
-  }
+ }
+  
