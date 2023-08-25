@@ -6,7 +6,7 @@ import '../Login/Login.css'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: "#b2b3b7",
+    backgroundColor: "gray",
     minHeight: "100vh",
     display: "flex",
     alignItems: "center",
@@ -17,7 +17,7 @@ border:'1px solid white',
 borderRadius:'7px',
 borderTop:'5px solid #337ab7',
 boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)', // Add your desired shadow styles here
-width:'45%',
+width:'50%',
 paddingBottom:'30px',
 position: 'absolute',
 top: '50%',
@@ -84,6 +84,7 @@ color:'gray'
 const Login = () => {
   const classes = useStyles();
   const [state,setState]=useState({username:"",password:""})
+  
   const [err,setErr]=useState({username:'',password:''})
   const  handleChange=(e:React.ChangeEvent <HTMLInputElement> )=>{
     const {name,value}=e.target;
@@ -119,11 +120,9 @@ setState((pre)=>({...pre,[name]:value}))
     console.log("Reset",state)
   }
   return (
-    <div className={classes.root}>
+     <div className={classes.root}>
          <div className={classes.box}>
-    <form onSubmit={handleSubmit} >
-      
- 
+    <form onSubmit={handleSubmit}>
         <div className="container">
             <div className={classes.imge}>
           <img src={image} alt="hi"/>
@@ -178,11 +177,9 @@ setState((pre)=>({...pre,[name]:value}))
      </Grid>
       </div>
         </div>
-       
-   
     </form>
     </div>
-    </div>
+   </div>
   )
 }
 
