@@ -2,9 +2,9 @@
     padding:'0px';
     margin:'0px'
 }
-body{
+/* body{
     background-color: #b2b3b7;
-}
+} */
 input:focus::placeholder {
     color: rgb(86, 138, 243);
  }

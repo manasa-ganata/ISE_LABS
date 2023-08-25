@@ -84,6 +84,7 @@ color:'gray'
 const Login = () => {
   const classes = useStyles();
   const [state,setState]=useState({username:"",password:""})
+  
   const [err,setErr]=useState({username:'',password:''})
   const  handleChange=(e:React.ChangeEvent <HTMLInputElement> )=>{
     const {name,value}=e.target;
@@ -121,9 +122,7 @@ setState((pre)=>({...pre,[name]:value}))
   return (
      <div className={classes.root}>
          <div className={classes.box}>
-    <form onSubmit={handleSubmit}  >
-      
- 
+    <form onSubmit={handleSubmit}>
         <div className="container">
             <div className={classes.imge}>
           <img src={image} alt="hi"/>
